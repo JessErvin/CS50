@@ -1,0 +1,141 @@
+@import url(https://fonts.googleapis.com/css?family=Tangerine);
+
+body {
+    background-image: url("background.jpg");
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Tangerine';
+    font-size: 62px;
+    font-weight: bold;
+}
+
+.main ul {
+    color: white;
+    text-align: center;
+    font-family: 'Tangerine';
+    font-size: 40px;
+}
+
+.X {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    text-align: right;
+}
+
+.turkey {
+    background-image: url("turkey.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.rolls {
+    background-image: url("rolls.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.eggs {
+    background-image: url("eggs.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.dip {
+    background-image: url("dip.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.potatoes {
+    background-image: url("potatoes.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.broccass {
+    background-image: url("broccass.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.brocsal {
+    background-image: url("brocsal.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.stuffing {
+    background-image: url("stuffing.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.gravy {
+    background-image: url("gravy.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.recipe {
+    display: block;
+    background: rgba(255,255,255,.5);
+    font-family: 'Tangerine';
+    color: rgb(39, 55, 70);
+    text-align: left;
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10%;
+    position: fixed;
+    width: 75%;
+    max-height: 75%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.recipe th {
+     text-align: center;
+     font-size: 36px;
+}
+
+.recipe h1 {
+    color: rgb(39, 55, 70);
+}
+
+a:link {
+    color: white;
+}
+
+.X a:link {
+    color: white;
+    font-family: 'Tangerine';
+    font-size: 50px;
+    padding-right: 15px;
+}
+
+.X a:hover {
+    color: darkorange;
+    text-decoration: none;
+}
+
+.main a:hover {
+    color: darkorange;
+}
+
+a:visited {
+    color: white;
+}
