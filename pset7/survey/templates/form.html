@@ -1,0 +1,113 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <!-- http://getbootstrap.com/docs/4.1/content/typography/ -->
+    <h1 class="mb-3">Form</h1>
+
+    <!-- http://getbootstrap.com/docs/4.1/components/forms/ -->
+    <form action="/form" method="post" class="needs-validation" novalidate>
+
+
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="name" placeholder="Name of Tea" type="text" required>
+        </div>
+
+        <div class="form-group">
+            <select class="form-control" name="tea-type" required>
+                <option disabled selected value="">Tea Type</option>
+                <option value="Black Tea">Black Tea</option>
+                <option value="Green Tea">Green Tea</option>
+                <option value="White Tea">White Tea</option>
+                <option value="Oolong Tea">Oolong Tea</option>
+                <option value="Rooibos Tea">Rooibos Tea</option>
+                <option value="Herbal Tea">Herbal Tea</option>
+                <option value="Matcha">Matcha</option>
+                <option value="Pu'erh Tea">Pu'erh Tea</option>
+                <option value="Maté Tea">Maté Tea</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Season</label>
+                <div class="form-check">
+                    <input class="form-check-input" id="Anytime" name="season" type="radio" value="Anytime" required>
+                    <label class="form-check-label" for="Anytime">Anytime</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" id="Fall" name="season" type="radio" value="Fall" required>
+                    <label class="form-check-label" for="Fall">Fall</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" id="Winter" name="season" type="radio" value="Winter" required>
+                    <label class="form-check-label" for="Winter">Winter</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" id="Summer" name="season" type="radio" value="Summer" required>
+                    <label class="form-check-label" for="Summer">Summer</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" id="Spring" name="season" type="radio" value="Spring" required>
+                    <label class="form-check-label" for="Spring">Spring</label>
+                </div>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label>Tags</label>
+                <div class="form-check">
+                    <input class="form-check-input" id="Christmas" name="tags" type="checkbox" value="Christmas">
+                    <label class="form-check-label" for="Christmas">Christmas</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" id="Under the Weather" name="tags" type="checkbox" value="Under the Weather">
+                    <label class="form-check-label" for="Under the Weather">Under the Weather</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" id="Decaf" name="tags" type="checkbox" value="Decaf">
+                    <label class="form-check-label" for="Decaf">Decaf</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" id="Relaxing" name="tags" type="checkbox" value="Relaxing">
+                    <label class="form-check-label" for="Relaxing">Relaxing</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" id="Chai" name="tags" type="checkbox" value="Chai">
+                    <label class="form-check-label" for="Chai">Chai</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" id="Fruity" name="tags" type="checkbox" value="Fruity">
+                    <label class="form-check-label" for="Fruity">Fruity</label>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- http://getbootstrap.com/docs/4.1/components/buttons/ -->
+        <button class="btn btn-primary" type="submit">Submit</button>
+
+    </form>
+
+    <script>
+
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopImmediatePropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+
+    </script>
+
+{% endblock %}
