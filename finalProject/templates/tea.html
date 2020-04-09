@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+{% if tea.userID == current_user %}
+            <td>{{ tea.name }}</td>
+            <td>{{ tea.type }}</td>
+            <td>{{ tea.rating }}</td>
+            <td>{{ tea.season }}</td>
+            <td>{{ tea.tags }}</td>
+{% endif %}
+{% endblock content %}
